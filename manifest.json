@@ -1,0 +1,74 @@
+{
+  "name": "Amazon Enhancement Suite",
+  "description": "Improves the Amazon experience.",
+  "version": "0.1",
+  "manifest_version": 3,
+  "icons": {
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "options_ui": {
+    "page": "options.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "declarative_net_request" : {
+    "rule_resources" : [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules.json"
+    }]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.amazon.ae/*",
+        "https://www.amazon.au/*",
+        "https://www.amazon.ca/*",
+        "https://www.amazon.cn/*",
+        "https://www.amazon.co.jp/*",
+        "https://www.amazon.co.uk/*",
+        "https://www.amazon.com/*",
+        "https://www.amazon.com.br/*",
+        "https://www.amazon.com.mx/*",
+        "https://www.amazon.com.tr/*",
+        "https://www.amazon.de/*",
+        "https://www.amazon.es/*",
+        "https://www.amazon.fr/*",
+        "https://www.amazon.in/*",
+        "https://www.amazon.it/*",
+        "https://www.amazon.nl/*",
+        "https://www.amazon.sa/*",
+        "https://www.amazon.se/*",
+        "https://www.amazon.sg/*"
+      ],
+      "js": ["content-script.js"]
+    }
+  ],
+  "permissions" : [
+    "declarativeNetRequest",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.amazon.ae/",
+    "https://www.amazon.au/",
+    "https://www.amazon.ca/",
+    "https://www.amazon.cn/",
+    "https://www.amazon.co.jp/",
+    "https://www.amazon.co.uk/",
+    "https://www.amazon.com/",
+    "https://www.amazon.com.br/",
+    "https://www.amazon.com.mx/",
+    "https://www.amazon.com.tr/",
+    "https://www.amazon.de/",
+    "https://www.amazon.es/",
+    "https://www.amazon.fr/",
+    "https://www.amazon.in/",
+    "https://www.amazon.it/",
+    "https://www.amazon.nl/",
+    "https://www.amazon.sa/",
+    "https://www.amazon.se/",
+    "https://www.amazon.sg/"
+  ]
+}

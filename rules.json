@@ -1,0 +1,23 @@
+[
+	{
+		"id": 1,
+		"priority": 1,
+		"condition": {
+			"urlFilter": "amazon.se",
+			"resourceTypes": ["main_frame"]
+		},
+		"action": {
+			"type": "redirect",
+			"redirect": {
+				"transform": {
+					"queryTransform": {
+						"addOrReplaceParams": [{
+							"key": "language",
+							"value": "sv_SE"
+						}]
+					}
+				}
+			}
+		}
+	}
+]
