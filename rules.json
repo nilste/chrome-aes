@@ -3,7 +3,7 @@
 		"id": 1,
 		"priority": 1,
 		"condition": {
-			"urlFilter": "amazon.se",
+			"urlFilter": "amazon.se/-/en/",
 			"resourceTypes": ["main_frame"]
 		},
 		"action": {

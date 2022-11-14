@@ -1,7 +1,7 @@
 {
   "name": "Amazon Enhancement Suite",
   "description": "Improves the Amazon experience.",
-  "version": "0.1",
+  "version": "0.1.1",
   "manifest_version": 3,
   "icons": {
     "48": "images/icon48.png",
