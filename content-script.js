@@ -50,3 +50,12 @@ if (observeElement) {
 }
 
 /* -------------------------------------------------------------------------- */
+
+if (window.location.pathname.includes('/cart')) {
+	let inputField = document.querySelector('input[name="quantityBox"]');
+	if (inputField) {
+		inputField.maxLength = 4;
+	}
+}
+
+/* -------------------------------------------------------------------------- */

@@ -7,6 +7,7 @@ Chrome extension with the aim of improving the Amazon user experience.
 * Automatically changes language into sv_SE (adjustable in rules.json).
 * Automatically shortens product URLs into /dp/xxxxxxxxxx.
 * Automatically hides products with shipping fee from search results.
+* Allows you to add more than 999 items of a product to the cart.
 
 ## Usage
 
